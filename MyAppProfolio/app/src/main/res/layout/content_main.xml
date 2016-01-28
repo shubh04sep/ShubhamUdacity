@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_20"
+            android:paddingLeft="@dimen/margin_40"
+            android:paddingRight="@dimen/margin_40">
+
+            <TextView
+                style="@style/text_style"
+                android:gravity="center"
+                android:text="@string/lbl_title_mynanodegree_appfolio" />
+
+            <Button
+                android:id="@+id/content_main_spotify_streamer_btn"
+                style="@style/button_style"
+                android:text="@string/lbl_spotify_stremer" />
+
+            <Button
+                android:id="@+id/content_main_scores_app_btn"
+                style="@style/button_style"
+                android:text="@string/lbl_score_app" />
+
+            <Button
+                android:id="@+id/content_main_library_app_btn"
+                style="@style/button_style"
+                android:text="@string/lbl_library_app" />
+
+            <Button
+                android:id="@+id/content_main_build_it_bigger_btn"
+                style="@style/button_style"
+                android:text="@string/lbl_build_it_bigger" />
+
+            <Button
+                android:id="@+id/content_main_xyz_reader_btn"
+                style="@style/button_style"
+                android:text="@string/lbl_xyz_reader" />
+
+            <Button
+                android:id="@+id/content_main_capstone_btn"
+                style="@style/button_style"
+                android:background="@drawable/ripple_effect_red_btn"
+                android:text="@string/lbl_capstone"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
